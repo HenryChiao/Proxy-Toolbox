@@ -85,11 +85,3 @@
 ---
 
 ## 🤝 反馈与更新 (Feedback)
-
-* **最近更新 (2025-12-06):** 新增 Sudodroid, Nekobox [starifly], YumeBox, ClashMac, 松果库等。
-* **反馈渠道:** 若有新软件或既有信息失去时效，欢迎前往 Telegram 反馈。
-    * Bot: `@HaitunSubmit_bot`
-    * Channel: `@haitun_channel`
-
-**特别感谢:** @mr bee, @orioncupidcomet, @Liu, @MQon 及所有贡献者。
-
