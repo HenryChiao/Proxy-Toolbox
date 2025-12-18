@@ -1,87 +1,80 @@
-# 代理工具箱 (Proxy Toolbox)
+# 🧰 Proxy-toolbox (代理工具箱)
 
-> **2025 年最新版跨平台代理工具与生态清单**
-> 拒绝过时信息，梳理一份涵盖移动端、桌面端、软硬路由及周边生态的“与时俱进”指南。
+> **来源**: [海豚测速](https://www.haitunt.org/app.html)  
+> **维护状态**: 持续更新 (Latest: 2025-12-06)
 
-[![Last Updated](https://img.shields.io/badge/Last%20Update-2025--12--06-green)](https://github.com/henrychiao/proxy-toolbox)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+## 📖 项目简介
 
----
+由于市井流传的 App 清单大多停留在 Clash 删库前 (2023.10) 的软件生态，本篇另起炉灶，旨在梳理一份**“与时俱进”**的清单。
 
-## 📖 关于本项目 (About)
+本项目涵盖移动端、电脑端、硬路由、软路由等平台，以及规则集、小工具、订阅转换等周边产品。
 
-市井流传的 App 清单大多停留在 Clash 删库前 (2023.10) 的旧时代。本仓库由**海豚测速**维护，旨在建立一份 2025 年标准的代理工具选型指南。
-
-**核心覆盖：**
-* **内核 (Cores):** Mihomo (Clash.Meta), Sing-box, Xray, V2ray
-* **平台 (Platforms):** Android, iOS, Windows, macOS, Linux, Routers
-* **生态 (Ecosystem):** 规则集, 订阅转换, 小工具
-
-
+若有新软件或既有信息失去时效，欢迎前往电报 [@HaitunSubmit_bot](https://t.me/HaitunSubmit_bot) 或 [@haitun_channel](https://t.me/haitun_channel) 举荐、反馈。
 
 ---
 
-## 🧭 导航目录 (Navigation)
+## 🗺️ 导航目录
 
-### 1. 核心与客户端 (Cores & Clients)
-本仓库主要内容按**代理内核**分类。如果您不确定选择哪个内核，请先阅读 [选型建议 (Roadmap)](roadmap/README.md)。
+请根据您的需求或核心偏好选择对应的文档：
 
-| 核心分类 | 特点简述 | 包含平台文档 |
+### 📚 [代理方案优先序 (Roadmap)](./roadmap/README.md)
+> **新手必读**：基础需求 vs 甜点需求 vs 进阶需求。  
+> 包含华硕/小米硬路由、Mac Mini 旁路由、Apple TV 等方案的选型建议。
+
+### 📦 按核心分类 (Clients by Core)
+本工具箱将客户端按底层核心重新归类，以便于高级用户查找：
+
+| 核心类型 | 包含软件示例 | 链接 |
 | :--- | :--- | :--- |
-| [**📂 Sing-box**](cores/sing-box/README.md) | ⚡ **极致性能**，全协议支持，DNS处理最强。配置门槛稍高。 | Android, iOS, Win, Mac, Linux, Router |
-| [**📂 Mihomo**](cores/mihomo/README.md) | 🛡️ **生态丰富**，原 Clash.Meta。分流规则易用，兼容性最好。 | Android, iOS, Win, Mac, Linux, Router |
-| [**📂 Xray / V2ray**](cores/xray/README.md) | 🧪 **自建首选**，协议更新快 (Reality/HY2)，稳守底层。 | Android, iOS, Win, Router |
-| [**📂 Hybrid / 框架**](cores/hybrid/README.md) | 📦 **多核集合**，如 Nekobox 等同时支持多种核心的工具。 | Android, Win, Linux |
+| **Sing-box** | Sing-box, Karing, Husi, GUI.for.SingBox | [📂 进入目录](./cores/sing-box/README.md) |
+| **Mihomo (Clash.Meta)** | FlClash, CMFA, Clash Verge Rev, ShellCrash | [📂 进入目录](./cores/mihomo/README.md) |
+| **Xray / V2ray** | v2rayNG, V2rayN, PassWall, ShadowRocket | [📂 进入目录](./cores/xray/README.md) |
+| **混合 / 框架 (Hybrid)** | Box for Root, Nekobox, Surge, Stash | [📂 进入目录](./cores/hybrid/README.md) |
 
-### 2. 路由与进阶 (Routers & Advanced)
-| 模块 | 说明 |
-| :--- | :--- |
-| [**📂 路由器方案**](cores/sing-box/routers.md) | 包含华硕梅林、小米官方固件、OpenWrt 软路由插件推荐。 |
-| [**📂 规则集**](rulesets/README.md) | GeoIP, GeoSite, 广告拦截规则, 分流规则 (适用于各内核)。 |
-| [**📂 辅助工具**](tools/README.md) | Sub-Store (订阅管理), Script Hub, SubCase 等小工具。 |
-| [**📂 订阅转换**](converters/README.md) | 推荐的在线/本地订阅转换服务列表。 |
+### 🛠️ 周边生态
+* **[📒 规则集 (Rulesets)](./rulesets/README.md)**: 涵盖 Sing-box / Mihomo / Surge / Loon / QX 的分流与去广告规则。
+* **[🧰 小工具 (Tools)](./tools/README.md)**: Sub-Store, Script Hub, iOS 模块库等。
+* **[🔄 订阅转换 (Converters)](./converters/README.md)**: 各大推荐的订阅转换服务列表。
+* **[📊 附录 (Appendix)](./appendix/protocol-matrix.md)**: App ⇆ 协议速查表、DNS 说明、性能调优。
 
 ---
 
-## 🏆 快速推荐 (Quick Picks)
+## 📝 最近更新 (Changelog)
 
-如果您不想深入研究，请直接参考以下“闭眼入”的 2025 年度推荐：
-
-### 📱 移动端 (Mobile)
-* **Android:**
-    * 👑 首选：**FlClash** (Mihomo系，美观) 或 **Sing-box** (官方版，极致)
-    * 🛠 自建：**Nekobox**
-* **iOS:**
-    * 👑 首选：**Shadowrocket** ($2.99 全能王)
-    * 💎 专业：**Surge** ($49.99/年 体验天花板)
-
-### 🖥 电脑端 (Desktop)
-* **Windows:** **Clash Verge Rev** (易用) 或 **v2rayN** (老牌全能)
-* **macOS:** **Surge Mac** (软路由平替) 或 **FlClash** (轻量化)
-
-### 🛜 路由器 (Router)
-* **华硕:** MerlinClash2 (需刷梅林)
-* **小米:** ShellCrash (需解锁 SSH)
-* **OpenWrt:** OpenClash (功能全) 或 Nikki (轻量)
+* **2025-12-06**:
+    * 新增 `Sudodroid` (🤖 安卓)
+    * 新增 `Nekobox [by starifly]` (🤖 安卓)
+    * 新增 `YumeBox` (🤖 安卓)
+    * 新增 `Nekobox for PC` (🪟 Win & 🐧 Linux)
+    * 新增 `ClashMac` (🍏 macOS)
+    * 新增 `松果库` (📒 iOS 模块库)
+    * 新增 `SubCase` (🧰 小工具)
+* **2025-11-19**:
+    * 新增 `Surfing` (🤖 安卓 Root)
+    * 新增 `ToMoon` (🎮 SteamOS)
+    * 新增 `DeckyClash` (🎮 SteamOS)
 
 ---
 
-## 🗺️ 选型路线图 (Roadmap)
+## 🏷️ 图例说明
 
-> 详见 [roadmap/README.md](roadmap/README.md)
+在本文档中，不同标签或描述代表的含义如下：
 
-* **基础需求** (流动场所 + 单设备) ➡️ **手机 App**
-* **甜点需求** (固定场所 + 多设备 + 易用性) ➡️ **华硕/小米硬路由 + 插件**
-* **进阶需求** (极致分流 + 双重极致体感) ➡️ **OpenWrt + Sing-box/TCP调优**
-
----
-
-## 📝 附录 (Appendix)
-
-* [📊 App ⇆ 协议速查表](appendix/protocol-matrix.md)
-* [🌐 DNS / Fake-IP / Real-IP 说明](appendix/dns.md)
-* [🚀 TCP 调优 / 单线程瓶颈说明](appendix/performance.md)
+* **备注**: 普通补充说明
+* **备注2**: 次要补充说明
+* **价值信息**: 值得注意的特性
+* **简评**: 简单的评价
+* **挑刺**: 缺点或不足
+* **风险**: 可能存在的风险（如断更、代码争议等）
 
 ---
 
-## 🤝 反馈与更新 (Feedback)
+## 🤝 致谢 (Credits)
+
+特别感谢 **@mr bee** 的最初蓝本，以及以下贡献者提供的有益补充和订正：
+
+@orioncupidcomet, @Liu, @MQon, @ZzhouDongYu, @M0o0o0o0o0o0on, @Ray, @戴夫, @有枝, @Lanlan13-14, @caleb
+
+---
+
+[📄 提交规范 (Contributing)](./CONTRIBUTING.md)
