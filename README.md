@@ -1,80 +1,52 @@
-# 🧰 Proxy-toolbox (代理工具箱)
+# 🧰 Proxy Toolbox
 
-> **来源**: [海豚测速](https://www.haitunt.org/app.html)  
-> **维护状态**: 持续更新 (Latest: 2025-12-06)
-
-## 📖 项目简介
-
-由于市井流传的 App 清单大多停留在 Clash 删库前 (2023.10) 的软件生态，本篇另起炉灶，旨在梳理一份**“与时俱进”**的清单。
-
-本项目涵盖移动端、电脑端、硬路由、软路由等平台，以及规则集、小工具、订阅转换等周边产品。
-
-若有新软件或既有信息失去时效，欢迎前往电报 [@HaitunSubmit_bot](https://t.me/HaitunSubmit_bot) 或 [@haitun_channel](https://t.me/haitun_channel) 举荐、反馈。
+> **简介**: 一份现代化的代理工具选型指南。
+>
+> 这里的目标不是教你“怎么连”，而是帮你从 2024/2025 年浩如烟海的软件列表中，根据**核心（Kernel）**、**平台（Platform）**和**协议需求（Protocol）**，快速找到最适合你的那一款工具。
 
 ---
 
-## 🗺️ 导航目录
+## 🗺️ 导航 (Navigation)
 
-请根据您的需求或核心偏好选择对应的文档：
+### 1. 🚀 快速开始
+* **[📚 选型路线图 (Roadmap)](./roadmap/)**
+    * *新手必读*：根据你的场景（手机/电脑/软路由）和预算，推荐最佳方案。
 
-### 📚 [代理方案优先序 (Roadmap)](./roadmap/README.md)
-> **新手必读**：基础需求 vs 甜点需求 vs 进阶需求。  
-> 包含华硕/小米硬路由、Mac Mini 旁路由、Apple TV 等方案的选型建议。
+### 2. 📦 按核心分类 (By Core)
+> **这是最科学的分类方式**。了解软件背后的核心，才能知道它支持什么协议（Reality/Hy2/TUIC）以及性能上限。
 
-### 📦 按核心分类 (Clients by Core)
-本工具箱将客户端按底层核心重新归类，以便于高级用户查找：
+* **[☢️ 核心总览与说明](./cores/README.md)** 👈 **(含 Clash/Mihomo/Singbox-P 详解)**
+    * **[Sing-box](./cores/sing-box/)**: 潜力股，支持全协议，DNS 性能最强。
+    * **[Mihomo (Clash.Meta)](./cores/mihomo/)**: 生态霸主，客户端选择最丰富。
+    * **[Xray (V2ray)](./cores/xray/)**: 老牌稳健，V2rayN/Shadowrocket 的基石。
+    * **[Proprietary (iOS)](./cores/proprietary/)**: Surge, Loon, Quantumult X 等商业闭源软件。
+    * **[Hybrid (混合/框架)](./cores/hybrid/)**: 涉及 dae (eBPF), Root 框架等极客方案。
 
-| 核心类型 | 包含软件示例 | 链接 |
+### 3. 🛠️ 资源与工具 (Resources)
+* **[📒 规则集 (Rulesets)](./rulesets/)**: GeoIP, GeoSite, 广告拦截规则源推荐。
+* **[🔄 订阅转换 (Converters)](./converters/)**: 在线转换与本地转换工具清单。
+* **[🧰 小工具 (Toolkit)](./tools/)**: Sub-Store, ScriptHub 等进阶管理工具。
+
+### 4. 📊 附录 (Appendix)
+* **[协议支持速查表](./appendix/protocol-matrix.md)** (Reality/Hy2 支持情况)
+* **[DNS 与 Fake-IP 原理](./appendix/dns.md)**
+* **[性能与调优](./appendix/performance.md)**
+
+---
+
+## ⚡️ 常见场景推荐 (Quick Picks)
+
+| 场景 | 推荐核心 | 推荐客户端/方案 |
 | :--- | :--- | :--- |
-| **Sing-box** | Sing-box, Karing, Husi, GUI.for.SingBox | [📂 进入目录](./cores/sing-box/README.md) |
-| **Mihomo (Clash.Meta)** | FlClash, CMFA, Clash Verge Rev, ShellCrash | [📂 进入目录](./cores/mihomo/README.md) |
-| **Xray / V2ray** | v2rayNG, V2rayN, PassWall, ShadowRocket | [📂 进入目录](./cores/xray/README.md) |
-| **混合 / 框架 (Hybrid)** | Box for Root, Nekobox, Surge, Stash | [📂 进入目录](./cores/hybrid/README.md) |
-
-### 🛠️ 周边生态
-* **[📒 规则集 (Rulesets)](./rulesets/README.md)**: 涵盖 Sing-box / Mihomo / Surge / Loon / QX 的分流与去广告规则。
-* **[🧰 小工具 (Tools)](./tools/README.md)**: Sub-Store, Script Hub, iOS 模块库等。
-* **[🔄 订阅转换 (Converters)](./converters/README.md)**: 各大推荐的订阅转换服务列表。
-* **[📊 附录 (Appendix)](./appendix/protocol-matrix.md)**: App ⇆ 协议速查表、DNS 说明、性能调优。
+| **iPhone (有钱)** | Proprietary | **Surge** 或 **Quantumult X** |
+| **iPhone (免费)** | Sing-box | **Sing-box** (App Store) |
+| **Android** | Mihomo | **FlClash** 或 **CMFA** |
+| **Windows** | Xray / Mihomo | **v2rayN** 或 **Clash Verge Rev** |
+| **Mac** | Mihomo | **FlClash** 或 **Surge Mac** |
+| **软路由 (小白)** | Mihomo | **OpenClash** 或 **ShellCrash** |
+| **软路由 (极客)** | Sing-box P | **HomeProxy** 或 **PassWall** |
 
 ---
 
-## 📝 最近更新 (Changelog)
-
-* **2025-12-06**:
-    * 新增 `Sudodroid` (🤖 安卓)
-    * 新增 `Nekobox [by starifly]` (🤖 安卓)
-    * 新增 `YumeBox` (🤖 安卓)
-    * 新增 `Nekobox for PC` (🪟 Win & 🐧 Linux)
-    * 新增 `ClashMac` (🍏 macOS)
-    * 新增 `松果库` (📒 iOS 模块库)
-    * 新增 `SubCase` (🧰 小工具)
-* **2025-11-19**:
-    * 新增 `Surfing` (🤖 安卓 Root)
-    * 新增 `ToMoon` (🎮 SteamOS)
-    * 新增 `DeckyClash` (🎮 SteamOS)
-
----
-
-## 🏷️ 图例说明
-
-在本文档中，不同标签或描述代表的含义如下：
-
-* **备注**: 普通补充说明
-* **备注2**: 次要补充说明
-* **价值信息**: 值得注意的特性
-* **简评**: 简单的评价
-* **挑刺**: 缺点或不足
-* **风险**: 可能存在的风险（如断更、代码争议等）
-
----
-
-## 🤝 致谢 (Credits)
-
-特别感谢 **@mr bee** 的最初蓝本，以及以下贡献者提供的有益补充和订正：
-
-@orioncupidcomet, @Liu, @MQon, @ZzhouDongYu, @M0o0o0o0o0o0on, @Ray, @戴夫, @有枝, @Lanlan13-14, @caleb
-
----
-
-[📄 提交规范 (Contributing)](./CONTRIBUTING.md)
+## 📜 声明
+本项目仅用于技术交流与软件选型索引，**不提供**任何节点订阅服务，也**不鼓励**任何违反当地法律法规的网络行为。
